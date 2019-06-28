@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+      <record id="view_company_form_inherit_clave" model="ir.ui.view">
+          <field name="name">view.company.form.add.text.field.clave</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="account.view_partner_property_form"/>
+          <field name="arch" type="xml">
+            <xpath expr="//field[@name='acc_number']" position="after">
+              <field name="clabe_campo"/>
+            </xpath> 
+           </field>
+      </record>
+  </data>
+</odoo>
